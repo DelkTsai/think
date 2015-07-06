@@ -1,0 +1,51 @@
+<div id="main-container" class="container-fluid"  style="min-height: 100%;background-color: #F0F0F0;">
+	<div class="row">
+		<include file="Public/header"/>
+		<div id="header" class="col-xs-12 no-padding"
+		style="background-image: url(__STATIC__/img/bg.png);background-color: #bb140d;">
+		<span class="center-block text-center"
+		style="color: #eee;font-size: 20px;padding: 8px 0;">{$title}</span>
+	</div>
+	<block name="body">
+		
+	</block>
+
+	<div id="footer" class="footer col-xs-12 no-padding">
+		<div class="content row">
+
+			<!--返回首页按钮-->
+			<a class="bar" href="{:U('Index/index')}">
+				<i class="fa fa-home"></i>
+			</a>
+
+			<div class="col-xs-3 no-padding">
+				<a class="center-block text-center" href="tel:15998920311">
+					<i class="fa fa-phone"></i>
+					<br> 电话咨询
+				</a>
+			</div>
+			<div class="col-xs-3 no-padding">
+				<a class="center-block text-center" href="#">
+					<i class="fa fa-map-marker"></i>
+					<br> 地理位置
+				</a>
+			</div>
+			<div class="col-xs-3 no-padding">
+				<a class="center-block text-center" href="#">
+					<i class="fa fa-pencil"></i>
+					<br> 在线留言
+				</a>
+			</div>
+			<div class="col-xs-3 no-padding">
+				<!--<a href="tencent://message/?uin=QQ号&amp;Site=www.xxx.com&amp;Menu=yes">QQ号码</a>-->
+				<a class="center-block text-center"
+				href="tencent://message/?uin=790629300&amp;Site=www.xxx.com&amp;Menu=yes">
+				<i class="fa fa-qq"></i>
+				<br> QQ客服
+			</a>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
