@@ -2,7 +2,7 @@
 namespace Admin\Controller;
 use Think\Controller;
 use Admin\Model;
-class IndexController extends Controller {
+class LoginController extends Controller {
 	
 	//页面入口
     public function index(){
@@ -20,26 +20,18 @@ class IndexController extends Controller {
     	$this->display();
     }
 
-    //添加
-    public function add(){
+    //登录验证
+    public function login(){
     	$User = D('User');
     	if($User->create()) {
     		$User->add();
     	}
-    	$this->redirect('/');
+    	$this->redirect('Login/index');
     }
 
-    //删除
-    public function delete(){
-    	$User = D('User');
-    	$User->delete($_GET['id']);
-    	$this->redirect('/');
-    }
-
-    //更新
-    public function update(){
-    	$User = D('User');
-    	$User->delete($_GET['id']);
-    	$this->redirect('/');
+     //退出操作
+    public function logout(){
+        
+        $this->redirect('Login/index');
     }
 }

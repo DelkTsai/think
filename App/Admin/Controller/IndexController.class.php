@@ -6,9 +6,10 @@ class IndexController extends Controller {
 	
 	//页面入口
     public function index(){
-    	$User = D("User");
-    	$user = $User->select();
-    	$this->assign("list",$user);
+    	$Company = D("Company");
+    	$list = $Company->select();
+    	$this->assign("com",$list[0]);
+        $this->assign("imgs",explode('|',$list[0]['imgs']));
     	$this->display();
     }
 

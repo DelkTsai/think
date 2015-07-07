@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<include file="Public/head"/>
+
+	<style type="text/css">
+		form span{
+			display: inline-block;
+			width: 80px;
+			text-align: right;
+		}
+	</style>
+</head>
+<body style="background:url(__STATIC__/img/bg.gif) repeat-x;">
+
+<div id="main-container" class="container">
+	<div class="row">
+		<div class="col-xs-12">
+	 		<form action="{:U('Index/add')}" method="post" style="padding-top:18%;text-align:center;">
+	 			<span>用户名：</span><input type="text" name="username" id="username" placeholder='用户名'>
+	 			<br>
+	 			<br>
+	 			<span>密码：</span><input type="text" name="age" id="age"  placeholder='密码'>
+	 			<br>
+	 			<br>
+	 			<input type="submit" value="登录">
+	 		</form>
+ 		</div>
+	</div>
+</div>
+</body>
+</html>
+
